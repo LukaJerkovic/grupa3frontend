@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Forma</title>
+  </head>
+
+  <body>
+    <div style="text-align: left">
+      <a href="./index.html">Vrati se na početnu</a>
+    </div>
+    <br />
+    <br />
+    <fieldset style="width: 0px">
+      <legend>Login forma</legend>
+      <p class="form_label" style="font-family: 'Noto Sans', sans-serif"></p>
+      <form method="post" action="">
+        <p>
+          <input
+            type="text"
+            placeholder="Upiši email"
+            style="font-family: 'Noto Sans', sans-serif"
+          />
+        </p>
+        <p>
+          <input
+            type="password"
+            placeholder="**********"
+            passwordrules="required: upper; required: lower; required: digit; 
+                 minlength: 8; allowed: [-().&@?'#,/&quot;+]; max-consecutive: 2"
+          />
+        </p>
+        <p>
+          <input
+            type="submit"
+            value="POŠALJI"
+            style="font-family: 'Noto Sans', sans-serif"
+          />
+        </p>
+      </form>
+    </fieldset>
+  </body>
+</html>
