@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title style="text-align: center">Forme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    background="./assets/sea-edge-79ab30e2.png"
+    style="background-repeat: no-repeat; background-size: cover; height: 100%"
+  >
+    <header>
+      <div style="text-align: left">
+        <a href="./index.html">Vrati se na početnu</a>
+      </div>
+      <h1 style="text-align: center; font-size: xxx-large">HTML forme</h1>
+    </header>
+
+    <br />
+    <br />
+    <fieldset style="width: 0px">
+      <legend>Login forma</legend>
+      <p class="form_label" style="font-family: 'Noto Sans', sans-serif"></p>
+      <form method="post" action="">
+        <p>
+          <input
+            type="text"
+            placeholder="Upiši email"
+            style="font-family: 'Noto Sans', sans-serif"
+          />
+        </p>
+        <p>
+          <input
+            type="password"
+            placeholder="**********"
+            passwordrules="required: upper; required: lower; required: digit; 
+                 minlength: 8; allowed: [-().&@?'#,/&quot;+]; max-consecutive: 2"
+          />
+        </p>
+        <p>
+          <input
+            type="submit"
+            value="POŠALJI"
+            style="font-family: 'Noto Sans', sans-serif"
+          />
+        </p>
+      </form>
+    </fieldset>
+    <p style="font-weight: bold; font-size: larger">Podatci o korisniku :</p>
+    <br />
+    <label for="spol">Spol :</label><br />
+    <input type="radio" id="spol" name="Spol" value="Ženski" />
+    <label for="Ženski_spol">Ženski</label><br />
+    <input type="radio" id="spol" name="Spol" value="Muški" />
+    <label for="Muški_spol">Muški</label><br />
+    <input type="radio" id="spol" name="Spol" value="Alien" />
+    <label for="Neodređeni_spol">Alien</label><br /><br />
+    <label for="datum_rodenja">Datum rođenja :</label><br />
+    <input type="date" id="datum_rodenja" name="datum" /><br /><br />
+    <label for="slider">Pomakni slider lijevo-desno</label><br><br>
+    <input type="range" />
+    <form>Klub za koji navijaš :
+        <input list="klubovi" />
+        <datalist id="klubovi">
+            <option value="Dinamo"></option>
+            <option value="Gorica"></option>
+            <option value="Hajduk"></option>
+            <option value="Istra 1961"></option>
+            <option value="Lokomotiva"></option>
+            <option value="Osijek"></option>
+            <option value="Rijeka"></option>
+            <option value="Slaven Belupo"></option>
+            <option value="Šibenik"></option>
+            <option value="Varaždin"></option>
+
+        </datalist>
+    </form>
+      
+    </form>
+  </body>
 </html>
