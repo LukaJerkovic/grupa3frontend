@@ -65,25 +65,36 @@
     <label for="Neodređeni_spol">Alien</label><br /><br />
     <label for="datum_rodenja">Datum rođenja :</label><br />
     <input type="date" id="datum_rodenja" name="datum" /><br /><br />
-    <label for="slider">Pomakni slider lijevo-desno</label><br><br>
+    <label for="slider">Pomakni slider lijevo-desno</label><br /><br />
     <input type="range" />
-    <form>Klub za koji navijaš :
-        <input list="klubovi" />
-        <datalist id="klubovi">
-            <option value="Dinamo"></option>
-            <option value="Gorica"></option>
-            <option value="Hajduk"></option>
-            <option value="Istra 1961"></option>
-            <option value="Lokomotiva"></option>
-            <option value="Osijek"></option>
-            <option value="Rijeka"></option>
-            <option value="Slaven Belupo"></option>
-            <option value="Šibenik"></option>
-            <option value="Varaždin"></option>
-
-        </datalist>
+    <form>
+      Klub za koji navijaš :
+      <input list="klubovi" />
+      <datalist id="klubovi">
+        <option value="Dinamo"></option>
+        <option value="Gorica"></option>
+        <option value="Hajduk"></option>
+        <option value="Istra 1961"></option>
+        <option value="Lokomotiva"></option>
+        <option value="Osijek"></option>
+        <option value="Rijeka"></option>
+        <option value="Slaven Belupo"></option>
+        <option value="Šibenik"></option>
+        <option value="Varaždin"></option>
+      </datalist>
     </form>
-      
-    </form>
+    <br />
+    <p>Izračunaj plaću iz kn u € :</p>
+    <input type="text" name="djeljenik" id="djeljenik" /> (plaća u kn) /
+    <input type="text" name="djelitelj" id="djelitelj" /> (tečaj) =
+    <output name="količnik" for="djeljenik djelitelj"></output>
+    <input type="submit" value="Rezultat" /><br />
+    <p>Unesite svoj komentar:</p>
+    <textarea
+      name="message"
+      style="width: 300px; height: 150px; background-color: rgb(194, 198, 201)"
+    >
+Prostor za unos poruke</textarea
+    >
   </body>
 </html>
